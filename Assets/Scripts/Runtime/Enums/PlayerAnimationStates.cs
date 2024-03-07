@@ -1,7 +1,9 @@
 namespace Runtime.Enums
 {
-    public class PlayerAnimationStates
+    public enum PlayerAnimationStates
     {
-        
+        Idle,
+        Run,
+        Happy,
     }
 }
