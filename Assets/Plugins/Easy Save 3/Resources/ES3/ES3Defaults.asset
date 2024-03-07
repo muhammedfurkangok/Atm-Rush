@@ -35,6 +35,7 @@ MonoBehaviour:
     - Boxophobic.PolyverseSkies.Runtime
     - Boxophobic.PolyverseSkies.Scripts
     - Boxophobic.Utils.Scripts
+    - Cinemachine
     - MK.Toon
     - MK.Toon.URP
     - sc.stylizedwater2.editor

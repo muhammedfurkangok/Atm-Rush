@@ -68,6 +68,7 @@ namespace Runtime.Handler
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
+                    
             }
         }
 
