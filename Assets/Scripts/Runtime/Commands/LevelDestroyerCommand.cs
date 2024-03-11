@@ -11,6 +11,7 @@ namespace Runtime.Commands
         public LevelDestroyerCommand(LevelManager levelManager)
         {
             _levelManager = levelManager;
+            
         }
 
         public void Execute()
