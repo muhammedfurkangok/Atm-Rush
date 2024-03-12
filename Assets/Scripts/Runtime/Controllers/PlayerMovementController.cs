@@ -43,6 +43,7 @@ namespace Runtime.Controllers
         {
             PlayerSignals.Instance.onPlayConditionChanged += OnPlayConditionChanged;
             PlayerSignals.Instance.onMoveConditionChanged += OnMoveConditionChanged;
+            
         }
 
         private void OnPlayConditionChanged(bool condition) => _isReadyToPlay = condition;
