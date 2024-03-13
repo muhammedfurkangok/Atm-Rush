@@ -16,6 +16,7 @@ namespace Runtime.Managers
         #region Serialized Variables
 
         [SerializeField] private CinemachineStateDrivenCamera stateDrivenCamera;
+        [SerializeField] private CinemachineVirtualCamera followCamera;
         [SerializeField] private Animator animator;
 
         #endregion
@@ -44,12 +45,20 @@ namespace Runtime.Managers
         {
             SubscribeEvents();
         }
-
+        
         private void SubscribeEvents()
         {
+            CoreGameSignals.Instance.onPlay += OnPlay;
             CoreGameSignals.Instance.onReset += OnReset;
             CameraSignals.Instance.onSetCinemachineTarget += OnSetCinemachineTarget;
             CameraSignals.Instance.onChangeCameraState += OnChangeCameraState;
+        }
+
+        private void OnPlay()
+        {
+            CameraSignals.Instance.onChangeCameraState?.Invoke(CameraStates.Follow);
+           followCamera.Follow = FindObjectOfType<PlayerManager>().transform;
+            
         }
 
         private void OnSetCinemachineTarget(CameraTargetState state)
@@ -58,8 +67,9 @@ namespace Runtime.Managers
             {
                 case CameraTargetState.Player:
                 {
-                //    var playerManager = FindObjectOfType<PlayerManager>().transform;
-                  //  stateDrivenCamera.Follow = playerManager;
+                    var playerManager = FindObjectOfType<PlayerManager>().transform;
+                    stateDrivenCamera.Follow = playerManager;
+                    Debug.Log("31");
                 }
                     break;
                 case CameraTargetState.FakePlayer:
@@ -101,5 +111,6 @@ namespace Runtime.Managers
             stateDrivenCamera.LookAt = null;
             transform.position = _initialPosition;
         }
+        
     }
 }

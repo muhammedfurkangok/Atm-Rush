@@ -10,7 +10,7 @@ namespace Runtime.Controllers.MiniGame
 
         #region SerializeField Variables
 
-      //  [SerializeField] private MiniGameManager manager;
+        [SerializeField] private MiniGameManager manager;
 
         #endregion
 
@@ -29,7 +29,7 @@ namespace Runtime.Controllers.MiniGame
         {
             if (!other.CompareTag(_wall)) return;
             _multiplier += 0.1f;
-        //    manager.SetMultiplier(_multiplier);
+            manager.SetMultiplier(_multiplier);
             ChangeColor(other);
         }
 

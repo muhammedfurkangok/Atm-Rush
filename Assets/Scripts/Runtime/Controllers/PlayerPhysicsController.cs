@@ -3,7 +3,7 @@ using Runtime.Enums;
 using Runtime.Signals;
 using UnityEngine;
 
-namespace Runtime.Controllers
+namespace Runtime.Controllers.Player
 {
     public class PlayerPhysicsController : MonoBehaviour
     {
