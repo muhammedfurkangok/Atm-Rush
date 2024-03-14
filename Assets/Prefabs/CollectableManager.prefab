@@ -55,7 +55,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1734958321483701034}
-  - component: {fileID: 6136885312012043912}
+  - component: {fileID: 7312867066810184327}
   m_Layer: 0
   m_Name: CollectableManager
   m_TagString: Collectable
@@ -80,7 +80,7 @@ Transform:
   - {fileID: 1734958321690011363}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6136885312012043912
+--- !u!114 &7312867066810184327
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meshController: {fileID: 2297952078168791736}
-  physicsController: {fileID: 6458835479096423919}
+  physicsController: {fileID: 4237066184765394161}
 --- !u!1 &1734958321690011293
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,9 +103,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1734958321690011363}
+  - component: {fileID: 4237066184765394161}
   - component: {fileID: 8222521586747451}
   - component: {fileID: 7726864012387231185}
-  - component: {fileID: 6458835479096423919}
   m_Layer: 0
   m_Name: Physics
   m_TagString: Collectable
@@ -128,6 +128,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1734958321483701034}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4237066184765394161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734958321690011293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53e5918f734747909fd518b670a5cb31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manager: {fileID: 7312867066810184327}
 --- !u!65 &8222521586747451
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -176,19 +189,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6458835479096423919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734958321690011293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53e5918f734747909fd518b670a5cb31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  manager: {fileID: 6136885312012043912}
 --- !u!1 &1734958322338515126
 GameObject:
   m_ObjectHideFlags: 0

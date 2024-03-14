@@ -6,7 +6,6 @@ namespace Runtime.Managers
 {
     public class SaveManager : MonoBehaviour
     {
-        /*
         #region EventSubscribtion
 
         private void OnEnable()
@@ -31,7 +30,7 @@ namespace Runtime.Managers
 
         #endregion
 
-       private void SaveData()
+        private void SaveData()
         {
             Debug.LogWarning(ScoreSignals.Instance.onGetMoney());
             OnSaveGame(
@@ -51,6 +50,6 @@ namespace Runtime.Managers
             ES3.Save("Money", saveDataParams.Money);
             ES3.Save("IncomeLevel", saveDataParams.IncomeLevel);
             ES3.Save("StackLevel", saveDataParams.StackLevel);
-        }*/
+        }
     }
 }

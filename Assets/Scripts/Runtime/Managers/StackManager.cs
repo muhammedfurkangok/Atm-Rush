@@ -130,7 +130,8 @@ namespace Runtime.Managers
             StackSignals.Instance.onInteractionCollectable -= OnInteractionWithCollectable;
             StackSignals.Instance.onInteractionObstacle -= _itemRemoverOnStackCommand.Execute;
             StackSignals.Instance.onInteractionATM -= OnInteractionWithATM;
-            StackSignals.Instance.onInteractionConveyor -= _stackInteractionWithConveyorCommand.Execute;
+            StackSignals.Instance.onInteractionConveyor -=
+                _stackInteractionWithConveyorCommand.Execute;
             StackSignals.Instance.onStackFollowPlayer -= OnStackMove;
             StackSignals.Instance.onUpdateType -= StackTypeUpdaterCommand.Execute;
             CoreGameSignals.Instance.onPlay -= OnPlay;

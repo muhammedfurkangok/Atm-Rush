@@ -1,3 +1,4 @@
+
 using System;
 using Cinemachine;
 using Runtime.Controllers.MiniGame;
@@ -17,6 +18,7 @@ namespace Runtime.Managers
 
         [SerializeField] private CinemachineStateDrivenCamera stateDrivenCamera;
         [SerializeField] private CinemachineVirtualCamera followCamera;
+        [SerializeField] private CinemachineVirtualCamera minigameCamera;
         [SerializeField] private Animator animator;
 
         #endregion
@@ -50,14 +52,21 @@ namespace Runtime.Managers
         {
             CoreGameSignals.Instance.onPlay += OnPlay;
             CoreGameSignals.Instance.onReset += OnReset;
+            CoreGameSignals.Instance.onMiniGameEntered += OnMiniGameEntered;
             CameraSignals.Instance.onSetCinemachineTarget += OnSetCinemachineTarget;
             CameraSignals.Instance.onChangeCameraState += OnChangeCameraState;
+        }
+
+        private void OnMiniGameEntered()
+        {
+            var fakePlayer = FindObjectOfType<WallCheckController>().transform;
+            minigameCamera.Follow = fakePlayer;
         }
 
         private void OnPlay()
         {
             CameraSignals.Instance.onChangeCameraState?.Invoke(CameraStates.Follow);
-           followCamera.Follow = FindObjectOfType<PlayerManager>().transform;
+            followCamera.Follow = FindObjectOfType<PlayerManager>().transform;
             
         }
 
@@ -69,7 +78,7 @@ namespace Runtime.Managers
                 {
                     var playerManager = FindObjectOfType<PlayerManager>().transform;
                     stateDrivenCamera.Follow = playerManager;
-                    Debug.Log("31");
+                 
                 }
                     break;
                 case CameraTargetState.FakePlayer:
@@ -94,6 +103,7 @@ namespace Runtime.Managers
             CoreGameSignals.Instance.onReset -= OnReset;
             CameraSignals.Instance.onSetCinemachineTarget -= OnSetCinemachineTarget;
             CameraSignals.Instance.onChangeCameraState -= OnChangeCameraState;
+            CoreGameSignals.Instance.onMiniGameEntered -= OnMiniGameEntered;
         }
 
         private void OnDisable()
