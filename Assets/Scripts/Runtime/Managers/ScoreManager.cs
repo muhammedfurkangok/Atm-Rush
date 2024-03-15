@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Runtime.Managers
 {
-    public class ScoreManager : MonoBehaviour
+    public class ScoreManager : MonoBehaviour // bu class'ı birşey kapatıyor o yüzden oyun bozuluyor. //TODO: bunu bozanı bul
     {
         #region Self Variables
 
@@ -21,7 +21,7 @@ namespace Runtime.Managers
 
         private void Awake()
         {
-            _money = GetMoneyValue();
+           
         }
 
         private void OnEnable()
@@ -88,18 +88,14 @@ namespace Runtime.Managers
         {
             OnSetValueMultiplier();
             RefreshMoney();
+          
         }
-
-        private int GetMoneyValue()
-        {
-            if (!ES3.FileExists()) return 0;
-            return (int)(ES3.KeyExists("Money") ? ES3.Load<int>("Money") : 0);
-        }
-
+        
         private void RefreshMoney()
         {
             _money += (int)(_scoreCache * ScoreSignals.Instance.onGetMultiplier());
             UISignals.Instance.onSetMoneyValue?.Invoke(_money);
+            
         }
 
         private void OnReset()

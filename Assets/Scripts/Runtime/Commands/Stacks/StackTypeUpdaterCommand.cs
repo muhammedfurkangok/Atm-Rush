@@ -21,9 +21,11 @@ namespace Runtime.Commands.Stack
             foreach (var items in _collectableStack)
             {
                 _totalListScore += items.GetComponent<CollectableManager>().GetCurrentValue() + 1;
+                Debug.Log(_totalListScore + items.GetComponent<CollectableManager>().GetCurrentValue());
             }
 
             ScoreSignals.Instance.onSetScore?.Invoke(_totalListScore);
+            Debug.Log(ScoreSignals.Instance.onSetScore);
         }
     }
 }

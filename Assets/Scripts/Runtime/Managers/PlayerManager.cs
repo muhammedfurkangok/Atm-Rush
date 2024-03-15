@@ -37,6 +37,13 @@ namespace Runtime.Managers
         {
             _data = GetPlayerData();
             SendPlayerDataToControllers();
+            var x = FindObjectOfType<ScoreManager>();
+            Debug.Log(x);
+            if (x != null)
+                Debug.Log("ScoreManager is enabled? : " + x.enabled);
+            else if (!x.enabled) x.enabled = true;
+            else
+                Debug.Log("ScoreManager is null");
         }
 
         private PlayerData GetPlayerData() => Resources.Load<CD_Player>(PlayerDataPath).Data;
