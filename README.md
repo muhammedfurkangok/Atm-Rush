@@ -1,5 +1,3 @@
-Merhababalar bu repoda "Atm Rush" adlı oyunu Okan Demirel'in yayınlamış olduğu "Unity 3D | C# | UML | Doğru ve Sektörel Kod Yazımı" adlı kurstan takip ederek klonladım
-Genel olarak kodlar advance seviyesinde ve anlamaya calisarak yazdım,
 
 Kullandığım Assetler:MKToon Shader,BOXOPHOBİC,EPIC TOON Fx, Cinemachine, Dotween Animation, Odin Inspector,Easy Save
 
