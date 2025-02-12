@@ -5,13 +5,6 @@ I aimed to create an **eye-catching experience**, with the **swing mechanic** be
 
 ---
 
-## 📺 Videos  
-
-🎮 **Original Game Reference:** [▶ Watch Here](https://www.youtube.com/watch?v=ppwSQ8gn6J8)  
-🎥 **Gameplay Video:** [▶ Watch Here](https://drive.google.com/file/d/1OJ87fspniPIubMMyIA8QfQWG45bkEOsu/view?usp=sharing)  
-
----
-
 ## 🔧 Tools & Assets Used  
  
 - **Cinemachine**  
