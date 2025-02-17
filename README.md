@@ -4,7 +4,8 @@ This project is a **hypercasual game clone** where I focused on both **technical
 I aimed to create an **eye-catching experience**, with the **swing mechanic** being the core gameplay feature.  
 
 ---
-
+## 🎮 Gameplay Video  
+![Swing Mechanic](https://github.com/user-attachments/assets/bd004f04-9489-4e05-a832-02ddff4b64e6)
 ## 🔧 Tools & Assets Used  
  
 - **Cinemachine**  
@@ -18,14 +19,14 @@ I aimed to create an **eye-catching experience**, with the **swing mechanic** be
 
 ## 📚 Key Concepts & Patterns Practiced  
 
-✅ **SOLID Principles** (Clean & Scalable Code)  
-✅ **Singleton Pattern** (Global Managers & Optimization)  
-✅ **Observer Pattern** (Event-Driven Architecture)  
-✅ **Strategy Pattern** (Flexible Behavior Implementation)  
-✅ **Command Pattern** (Decoupled Input Handling)  
+✅ **SOLID Principles**  
+✅ **Singleton Pattern** 
+✅ **Observer Pattern** 
+✅ **Strategy Pattern** 
+✅ **Command Pattern**  
 ✅ **Factory Pattern** (Object Creation & Management)  
 ✅ **Actor Pattern** (Component-Based AI & Entities)  
-✅ **Scriptable Objects** (Decoupled & Data-Driven Systems)  
+✅ **Scriptable Objects** 
 ✅ **Signals & Events** (UnityEvents, Funcs, Actions)  
 ✅ **Post Processing** (Enhanced Visual Effects)  
 ✅ **Shaders** (Custom Material Effects & Optimizations)  
