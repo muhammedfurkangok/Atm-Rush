@@ -6,11 +6,7 @@ I aimed to create an **eye-catching experience**, with the **swing mechanic** be
 ---
 ## 🎮 Gameplay Video  
 
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/d5e3bd94-ec72-4e3e-8d39-21b4f571fde2">
-    <img src="https://img.icons8.com/ios-filled/100/play.png" alt="Watch Gameplay Video"/>
-  </a>
-</p>
+[▶ Watch Gameplay Video](https://github.com/user-attachments/assets/d5e3bd94-ec72-4e3e-8d39-21b4f571fde2)  
 
 ## 🔧 Tools & Assets Used  
  
