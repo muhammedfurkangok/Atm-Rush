@@ -21,16 +21,16 @@ I aimed to create an **eye-catching experience**, with the **swing mechanic** be
 
 ## 📚 Key Concepts & Patterns Practiced  
 
-✅ **SOLID Principles**  
-✅ **Singleton Pattern** 
-✅ **Observer Pattern** 
-✅ **Strategy Pattern** 
-✅ **Command Pattern**  
-✅ **Factory Pattern** (Object Creation & Management)  
-✅ **Actor Pattern** (Component-Based AI & Entities)  
-✅ **Scriptable Objects** 
-✅ **Signals & Events** (UnityEvents, Funcs, Actions)  
-✅ **Post Processing** (Enhanced Visual Effects)  
-✅ **Shaders** (Custom Material Effects & Optimizations)  
+**SOLID Principles** (Clean & Scalable Code)  
+**Singleton Pattern** (Global Managers & Optimization)  
+**Observer Pattern** (Event-Driven Architecture)  
+**Strategy Pattern** (Flexible Behavior Implementation)  
+**Command Pattern** (Decoupled Input Handling)  
+**Factory Pattern** (Object Creation & Management)  
+**Actor Pattern** (Component-Based AI & Entities)  
+**Scriptable Objects** (Decoupled & Data-Driven Systems)  
+**Signals & Events** (UnityEvents, Funcs, Actions)  
+**Post Processing** (Enhanced Visual Effects)  
+**Shaders** (Custom Material Effects & Optimizations)  
 
 ---
