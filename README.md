@@ -6,7 +6,7 @@ I aimed to create an **eye-catching experience**, with the **swing mechanic** be
 ---
 ## 🎮 Gameplay Video  
 
-[▶ Watch Gameplay Video](https://github.com/user-attachments/assets/d5e3bd94-ec72-4e3e-8d39-21b4f571fde2)  
+[▶ Watch Gameplay Video](https://github.com/user-attachments/assets/bd004f04-9489-4e05-a832-02ddff4b64e6)  
 
 ## 🔧 Tools & Assets Used  
  
